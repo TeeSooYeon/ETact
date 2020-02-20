@@ -6,8 +6,8 @@ $load = (isset($_GET['page'])&& $_GET['page'] !='')? $_GET['page'] : '';
 	<ul>
 		<li><a href="index.php?page=list">Show</a></li>
 		<li><a href="index.php?page=create">Create</a></li>
-		<li><a href="index.php?page=update">Delete</a></li>
-		<li><a href="index.php?page=delete">Update</a></li>
+		<li><a href="index.php?page=update">Update</a></li>
+		<li><a href="index.php?page=delete">Delete</a></li>
 	</ul>
 <?php
 	switch($load){
