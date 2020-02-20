@@ -1,5 +1,5 @@
 <?php
- $json = file_get_content('http://api-act.herokuapp.com/show_data.php');
+ $json = file_get_content('http://rdapi.herokuapp.com/product/read.php');
  $data = json_decode($json,true);
  
  $list = $data['records'];
