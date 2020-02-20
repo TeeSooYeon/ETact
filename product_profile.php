@@ -3,7 +3,7 @@
  $json = file_get_contents('http://rdapi.herokuapp.com/product/read_one.php?id='.$id);
  $data = json_decode($json,true);
  $details = array('records' => $data);
- $list = $details['records'];
+ $result = $details['records'];
 ?>
 <html>
   <table>
@@ -13,17 +13,11 @@
       <th>Category</th>
       <th>Description</th>
     </tr>
-    <?php
-      foreach($list as $result){
-    ?>
     <tr>
       <td> <?php echo $result['name']; ?> </td>
       <td><?php echo $result['price']; ?> </td>
       <td><?php echo $result['description']; ?> </td>
       <td><?php echo $result['category_name'];?> </td>
-    </tr>
-    <?php
-      }
-    ?>
+   </tr>
   </table>
 </html>
