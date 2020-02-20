@@ -1,6 +1,6 @@
 <?php
  $id = $_GET['id'];
- $json = file_get_contents('http://rdapi.herokuapp.com/product/read_one.php'.$id);
+ $json = file_get_contents('http://rdapi.herokuapp.com/product/read_one.php?id='.$id);
  $data = json_decode($json,true);
  $details = array('records' => $data);
  $list = $details['records'];
