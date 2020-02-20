@@ -14,16 +14,12 @@
     </tr>
     <?php
       foreach($list as $result){
-        $name = $result['name'];
-        $price = $result['price'];
-        $desc = $result['description'];
-        $cat = $result['category_name'];
     ?>
     <tr>
-      <td> <?php echo $name ;?> </td>
-      <td><?php echo $price ;?></td>
-      <td><?php echo $cat ;?></td>
-      <td><?php echo $desc ;?></td>
+      <td> <?php echo $result['name']; ?> </td>
+      <td><?php echo $result['price']; ?> </td>
+      <td><?php echo $result['description']; ?> </td>
+      <td><?php echo $result['category_name'];?> </td>
     </tr>
     <?php
       }
