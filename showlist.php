@@ -1,6 +1,5 @@
 <?php
- $id = $_GET['id'];
- $json = file_get_contents('http://rdapi.herokuapp.com/product/read.php&id='.$id);
+ $json = file_get_contents('http://rdapi.herokuapp.com/product/read.php');
  $data = json_decode($json,true);
  
  $list = $data['records'];
@@ -17,7 +16,7 @@
       foreach($list as $result){
     ?>
     <tr>
-      <td> <?php echo $result['name']; ?> </td>
+     <td> <a href="product_profile.php&id=<?php echo $result['id'];?>"> <?php echo $result['name']; ?> </a> </td>
       <td><?php echo $result['price']; ?> </td>
       <td><?php echo $result['description']; ?> </td>
       <td><?php echo $result['category_name'];?> </td>
