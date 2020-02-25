@@ -26,7 +26,7 @@
    </tr>
   </table>
   <br/>
-  <a class="w3-button w3-round-large w3-yellow" href="pro_update.php?id=<?php echo $id ?>">Update/Edit</a>
+  <a class="w3-button w3-round-large w3-yellow" href="form_update.php?id=<?php echo $id ?>">Update/Edit</a>
   <br/>
   <br/>
   <br/>
