@@ -26,10 +26,10 @@
    </tr>
   </table>
   <br/>
-  <a class="w3-button w3-round-large w3-yellow" href="index.php?page=update&id=<?php echo $id;?>">Update/Edit</a>
+  <a class="w3-button w3-round-large w3-yellow" href="pro_update.php?id=<?php echo $id ?>">Update/Edit</a>
   <br/>
   <br/>
   <br/>
-  <a class="w3-button w3-round-large w3-red" href="pro_delete.php?id=<?php echo $id;?>">Delete/Trash</a>
+  <a class="w3-button w3-round-large w3-red" href="pro_delete.php?id=<?php echo $id ?>">Delete/Trash</a>
   </div>
 </html>
