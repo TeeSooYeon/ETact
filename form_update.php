@@ -11,6 +11,8 @@
 ?>
 <html>
 <br/>
+<br/>
+<br/>
 <div class="w3-container">
 <form action="pro_update.php?id=<?php echo $id;?>" method="POST">
 	Name:<br/><input class="w3-input w3-border w3-round-large" type="text" name="name" value="<?php echo $result['name'];?>"/><br/><br/>
