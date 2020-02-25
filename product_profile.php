@@ -11,25 +11,19 @@
 <br/>
 <br/>
 <div class="w3-container">
-    <table class="w3-table-all w3-hoverable">
-    <tr class="w3-light-blue">
-      <th>Name</th>
-      <th>Price</th>
-      <th>Description</th>
-      <th>Category</th>
-    </tr>
-    <tr>
-      <td> <?php echo $result['name']; ?> </td>
-      <td><?php echo $result['price']; ?> </td>
-      <td><?php echo $result['description']; ?> </td>
-      <td><?php echo $result['category_name'];?> </td>
-   </tr>
-  </table>
-  <br/>
-  <a class="w3-button w3-round-large w3-yellow" href="form_update.php?id=<?php echo $id ?>">Update/Edit</a>
-  <br/>
-  <br/>
-  <br/>
-  <a class="w3-button w3-round-large w3-red" href="pro_delete.php?id=<?php echo $id ?>">Delete/Trash</a>
+	<div class="w3-card-4">
+		<header class="w3-container w3-light-blue">
+			<h1><b><?php echo $result['name']; ?></b></h1>
+		</header>
+	<div class="w3-container w3-padding-large">
+		<p> <b>Price:  </b><?php echo $result['price']; ?></p>
+		<p>	<b>Description:  </b><?php echo $result['description']; ?> </p>
+		<p>	<b>Category:  </b><?php echo $result['category_name'];?> </p>
+	</div>
+		<footer class="w3-container w3-light-blue w3-padding-small">
+			<a class="w3-button w3-round-large w3-yellow w3-margin" href="form_update.php?id=<?php echo $id ?>">Update/Edit</a>
+			<a class="w3-button w3-round-large w3-red w3-margin" href="pro_delete.php?id=<?php echo $id ?>">Delete/Trash</a>
+		</footer>
+	</div>
   </div>
 </html>
