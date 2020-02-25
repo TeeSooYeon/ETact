@@ -6,12 +6,17 @@
  $result = $details['records'];
 ?>
 <html>
-  <table>
-    <tr>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="w3-container">
+    <table class="w3-table-all w3-hoverable">
+    <tr class="w3-light-blue">
       <th>Name</th>
       <th>Price</th>
-      <th>Category</th>
       <th>Description</th>
+      <th>Category</th>
     </tr>
     <tr>
       <td> <?php echo $result['name']; ?> </td>
@@ -20,4 +25,11 @@
       <td><?php echo $result['category_name'];?> </td>
    </tr>
   </table>
+  <br/>
+  <a class="w3-button w3-round-large w3-yellow" href="index.php?page=update&id=<?php echo $id;?>">Update/Edit</a>
+  <br/>
+  <br/>
+  <br/>
+  <a class="w3-button w3-round-large w3-red" href="pro_delete.php?id=<?php echo $id;?>">Delete/Trash</a>
+  </div>
 </html>

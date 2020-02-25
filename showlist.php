@@ -2,15 +2,35 @@
  $json = file_get_contents('http://rdapi.herokuapp.com/product/read.php');
  $data = json_decode($json,true);
  
- $list = $data['records'];
+ $search = $_POST['search'];
+ 
+ if(isset($search)){
+	$jsearch = file_get_contents('http://rdapi.herokuapp.com/product/search.php?s='.$search);
+	$res = json_decode($jsearch,true);
+
+	$list = $res['records'];
+	
+ }else{
+	$list = $data['records'];
+ }
+ 
 ?>
 <html>
-  <table>
-    <tr>
+<br/>
+<br/>
+<br/>
+<div class="w3-container">
+	<form action="index.php?page=list" method="POST">
+	Search:<input type="text" name="search" placeholder="Search Product Name">
+		<input type="submit" name="submit" value="Search">
+	</form>
+	<hr/>
+  <table class="w3-table-all w3-hoverable">
+    <tr class="w3-light-blue">
       <th>Name</th>
       <th>Price</th>
-      <th>Category</th>
       <th>Description</th>
+      <th>Category</th>
     </tr>
     <?php
       foreach($list as $result){
@@ -25,4 +45,5 @@
       }
     ?>
   </table>
+ </div>
 </html>
