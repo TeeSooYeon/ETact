@@ -1,5 +1,5 @@
 <?php
-$id = $_POST['id'];
+$id = $_GET['id'];
 $name = $_POST['name'];
 $price = $_POST['price'];
 $description = $_POST['description'];
