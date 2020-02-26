@@ -21,7 +21,7 @@
 		<p>	<b>Category:  </b><?php echo $result['category_name'];?> </p>
 	</div>
 		<footer class="w3-container w3-light-blue w3-padding-small">
-			<a class="w3-button w3-round-large w3-yellow w3-margin" href="form_update.php?id=<?php echo $id ?>">Update/Edit</a>
+			<a class="w3-button w3-round-large w3-yellow w3-margin" href="index.php?page=update&id=<?php echo $id ?>">Update/Edit</a>
 			<a class="w3-button w3-round-large w3-red w3-margin" href="pro_delete.php?id=<?php echo $id ?>">Delete/Trash</a>
 		</footer>
 	</div>
