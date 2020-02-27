@@ -28,8 +28,6 @@
   <table class="w3-table-all w3-hoverable">
     <tr class="w3-light-blue">
       <th>Name</th>
-      <th>Price</th>
-      <th>Description</th>
       <th>Category</th>
     </tr>
     <?php
@@ -37,8 +35,6 @@
     ?>
     <tr>
      <td> <a href="index.php?page=show_product&id=<?php echo $result['id'];?>"> <?php echo $result['name']; ?> </a> </td>
-      <td><?php echo $result['price']; ?> </td>
-      <td><?php echo $result['description']; ?> </td>
       <td><?php echo $result['category_name'];?> </td>
     </tr>
     <?php
