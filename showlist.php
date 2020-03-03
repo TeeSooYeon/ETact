@@ -21,8 +21,8 @@
 <br/>
 <div class="w3-container">
 	<form action="index.php?page=list" method="POST">
-	Search:<input type="text" name="search" placeholder="Search Product Name">
-		<input type="submit" name="submit" value="Search">
+	Search:<input class="w3-input" type="text" name="search" placeholder="Search Product Name">
+		<input class="w3-button w3-green" type="submit" name="submit" value="Search">
 	</form>
 	<hr/>
   <table class="w3-table-all w3-hoverable">
