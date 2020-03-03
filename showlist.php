@@ -21,8 +21,9 @@
 <br/>
 <div class="w3-container">
 	<form action="index.php?page=list" method="POST">
-	Search:<input class="w3-input" type="text" name="search" placeholder="Search Product Name">
+	Search:<input type="text" name="search" placeholder="Search Product Name">
 		<input class="w3-button w3-green" type="submit" name="submit" value="Search">
+		<button type="submit" name="submit" class="w3-button w3-green"><i class='fas fa-search'></i></button>
 	</form>
 	<hr/>
   <table class="w3-table-all w3-hoverable">
@@ -43,3 +44,4 @@
   </table>
  </div>
 </html>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
